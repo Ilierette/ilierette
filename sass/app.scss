@@ -1,0 +1,51 @@
+@import "_custom.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.cv-body{
+	max-width: 900px;
+	@media print {
+		width: 100%;
+	}
+}
+
+.contact {
+	min-height:100%;
+	background-color: $dark-grey;
+}
+
+.contact-img {
+	background: url("../img/profile.jpg") no-repeat;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 10px solid $light-grey;
+}
+
+.contact-box {
+	border-bottom: 5px solid $light-grey;
+	margin: 0 -15px;
+	width: calc( 100% + 30px );
+
+	.head {
+		text-transform: uppercase;
+		line-height: 35px;
+		margin-bottom: 0;		
+		background-color: $light-grey;
+		padding: 5px 15px;
+	}
+	&.last{
+		border-bottom: 0px;
+	}
+}
+
+.cv-box {
+	.head {
+		text-transform: uppercase;
+	}
+}
+
+.page-footer{
+	background-color: $dark-grey;
+	margin: 0 -15px;
+}
